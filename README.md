@@ -20,7 +20,7 @@ Before running the script, ensure the following are installed on your system:
 ## Setup and Usage  
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/yourusername/LinkedIn-Automation-Script.git
+   git clone https://github.com/SavindaKaveesha/LinkedIn-Automation-Script.git
    cd LinkedIn-Automation-Script
    ```
 
@@ -61,6 +61,3 @@ LinkedIn-Automation-Script/
 
 ## Contributing  
 Feel free to open an issue or submit a pull request for improvements or additional features.  
-
-## License  
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
