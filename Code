@@ -1,0 +1,64 @@
+package AutomationScript;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WindowType;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class LoginAutomation {
+
+    public static void main(String[] args) throws InterruptedException {
+        // Step 1 - Provide the path of your driver. Chrome Driver
+        System.setProperty("webdriver.chrome.driver", "I:\\Java\\Selenium\\chromedriver-win64\\chromedriver.exe");
+
+        // Step 2 - Instantiate a ChromeDriver class
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.google.com/");
+        WebElement linkname = driver.findElement(By.xpath("//textarea[@id='APjFqb']"));
+        linkname.isDisplayed();
+        linkname.isEnabled();
+        linkname.sendKeys("linkedIn login");
+       
+        
+        		
+        driver.navigate().to("https://lk.linkedin.com/");
+        driver.navigate().forward();
+      
+        
+
+        // Provide user name
+        WebElement username = driver.findElement(By.xpath("//input[@id='session_key']"));
+        username.isDisplayed();
+        username.isEnabled();
+        username.sendKeys("rishinisadamini98@gmail.com");
+        
+
+        //Provide password
+        WebElement password = driver.findElement(By.id("session_password"));
+        password.isDisplayed();
+        password.isEnabled();
+        password.sendKeys("Rishini@123#");
+        
+        
+
+        //Click on the login button
+        WebElement loginButton3 = driver.findElement(By.xpath("//button[normalize-space()='Sign in']"));
+        loginButton3.isDisplayed();
+        loginButton3.isEnabled();
+        loginButton3.click();
+        
+        String MainTab = driver.getWindowHandle();
+        System.out.println(MainTab);
+        Thread.sleep(5000);
+        
+        driver.switchTo().window(MainTab);
+        System.out.println(driver.getTitle());
+        driver.close();
+       
+    }
+}
