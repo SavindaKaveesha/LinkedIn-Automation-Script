@@ -44,16 +44,6 @@ Before running the script, ensure the following are installed on your system:
    password.sendKeys("your_password");
    ```
 
-## Project Structure  
-```
-LinkedIn-Automation-Script/
-├── src/
-│   └── AutomationScript/
-│       └── LoginAutomation.java
-├── .gitignore
-└── README.md
-```
-
 ## Important Notes  
 - **Security:** Avoid hardcoding sensitive information like usernames and passwords. Use environment variables or secure credential storage solutions.  
 - **Browser Compatibility:** Ensure ChromeDriver matches the version of your installed Chrome browser.  
