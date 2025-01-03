@@ -1,5 +1,5 @@
 
-# LinkedIn-Automation-Script
+# LinkedIn Automation Script
 
 ## Description  
 This project contains a Java Selenium script to automate the LinkedIn login process. It uses the ChromeDriver to interact with the LinkedIn website and performs actions like entering credentials and clicking the login button.
